@@ -1,0 +1,17 @@
+h1{
+    color: rgb(238, 79, 11);
+    background-color: antiquewhite;
+    text-align: center;
+}
+.test{
+    width: 100px;
+}
+.testt{
+    color: pink;
+}
+#testtt{
+    color: darkorange;
+}
+.hi > h2{
+    background-color:rgb(67, 44, 9)
+}

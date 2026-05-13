@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.338);
+        }
+        .border{
+            max-width: 350px;
+            max-height: 400px;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(15, 15, 23);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .plus{
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+            top: 4px;
+        }
+        .setting{
+            font-size: 25px;
+            color: rgba(255, 255, 255, 0.884);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .switch{
+            position: absolute;
+            top: 10px;
+            color: rgba(255, 255, 255, 0.884);
+            display: flex;
+        }
+        .switch > i{
+            font-size: larger;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile{
+            margin-top: 50px;
+            margin-left: 30px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(15, 15, 23);
+            float: left;
+            
+        }
+        .profile .profile-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            border: 2px solid rgb(15, 15, 23);
+        }
+        .note{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.612);
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+            position: absolute;
+            top: 205px ;
+            left: 210px;
+            background-color: rgb(65, 61, 61);
+            font-size: 10px
+        }
+        .plus1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            font-weight:bold;
+            background-color: rgba(255, 255, 255, 0.884);
+            border: 4px solid rgb(15, 15, 23);
+            position: absolute;
+            top: 297px;
+            left: 262px;
+            text-decoration: none;
+        }
+        .username{
+            display: flex;
+            margin-left: 135px;
+            margin-top: 50px;
+            
+        }
+        .username > p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(240, 248, 255, 0.568);
+            font-size: smaller;
+        }
+        .follow{
+            display: flex;
+            color: rgba(255, 255, 255, 0.884);
+            font-size: small;
+            
+        }
+        .post{
+            margin-top: 5px;
+            margin-left: 12px
+        }
+        .follow{
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+        .follower{
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+        .bio{
+            position: absolute;
+            top: 327px;
+            left: 200px;
+        }
+        .bio-text{
+            font-size: small;
+            color: rgba(255, 255, 255, 0.884);
+        }
+        .facebook{
+            display: flex;
+            margin-top: 3px;
+            font-size: small;
+            color: rgba(255, 255, 255, 0.884);
+            text-decoration: none;
+        }
+        .facebook > i{
+            border: 1px solid rgba(255, 255, 255, 0.884) ;
+            border-radius: 50%;
+        }
+        .name{
+            position: relative;
+            top: 2px;
+            margin-left: 5px;
+        }
+        .threads{
+            margin-left: 10px;
+        }
+        .thread{
+            position: relative;
+            top: 2px;
+        }
+        .buttons{
+            position: absolute;
+            top: 375px;
+            left: 190px;
+        }
+        .b1{
+            width: 150px;
+            height: 25px;
+            border-radius: 7px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.137);
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 11px;
+        }
+        .b2{
+            width: 150px;
+            height: 25px;
+            border: none;
+            border-radius: 7px;
+            background-color: rgba(255, 255, 255, 0.137);
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 11px;
+        }
+        .highligh{
+            position: absolute;
+            top: 415px;
+            left: 190px;
+            color: rgba(255, 255, 255, 0.884);
+        }
+        .news{
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.137);
+            padding: 3px;
+        }
+        .new{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            font-size: 35px;
+            align-items: center;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.137);
+            
+        }
+        .img1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .img2{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .highligh-border{
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.137);
+            padding: 3px;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            left: 80px;
+            color: rgba(255, 255, 255, 0.884);
+        }
+        .highligh-border1{
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.137);
+            padding: 3px;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            left: 160px;
+            color: rgba(255, 255, 255, 0.884);
+        }
+        .highligh-text{
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 10px;
+            position: absolute;
+            top: 482px;
+            left: 210px;
+        }
+        .gf{
+            margin-left: 55px;
+        }
+        .hl{
+            margin-left: 60px;
+        }
+        .icon{
+            color: rgba(255, 255, 255, 0.342);
+            position: absolute;
+            font-size: 23px;
+            top: 520px;
+            left: 208px;
+        }
+        .grid{
+            color: rgba(255, 255, 255, 0.884);
+            
+        }
+        .play{
+            margin-left: 50px;
+        }
+        .repost{
+            margin-left: 50px;
+        }
+        .user{
+            margin-left: 50px;
+        }
+        .line{
+            width: 8%;
+            height: 2px;
+            position: absolute;
+            top: 545px;
+            left: 193px;
+            background-color: rgba(255, 255, 255, 0.884);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="border">
+        
+        <div class="header">
+            <label for="" class="plus">+</label>
+            <label for="" class="switch">chettraborn<i class='bx bx-chevron-down' ></i></label>
+            <a href="#" class="setting">
+                <i class='bx bxs-cog'></i>
+            </a>
+        </div>
+        <div class="profile">
+            <img src="face.jpg" alt="" class="profile-img">
+            <label for="" class="note">Note...</label>
+            <a href="" class="plus1"><b>+</b></a>
+        </div>
+        <div class="follow-list">
+            <label for="" class="username">🍓 <p>he/him</p></label>
+            <div class="follow">
+                <label for="" class="post">44 <br>posts</label>
+                <label for="" class="follow">336<br>follows</label>
+                <label for="" class="follower">242<br>follower</label>
+            </div>
+        </div>
+        <div class="bio">
+            <label for="" class="bio-text">Let it be.</label><br>
+            <a href="" class="facebook">
+                <i class='bx bxl-facebook' ></i>
+                <div class="socailmedia">
+                    <label for="" class="name">Chettra Born</label>
+                    <label for="" class="threads">@ </label><label class="thread">chettraborn</label>
+                </div>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="b1">Edit profile</button>
+            <button class="b2">Share profile</button>
+        </div>
+        <div class="highligh">
+            <div class="news">
+                <label for="" class="new">+</label>
+            </div>
+            <div class="highligh-border">
+                <img src="bbyy.jpg" alt="" class="img1">
+            </div>
+            <div class="highligh-border1">
+                <img src="highlight.jpg" alt="" class="img2">
+            </div>
+        </div>
+        <div class="highligh-text">
+            <label for="" class="new-text">New</label>
+            <label for="" class="gf">My girl</label>
+            <label for="" class="hl">.</label>
+        </div>
+        <div class="icon">
+            <label for="" class="grid">
+                <i class='bx bxs-grid'></i>
+            </label>
+            <label for="" class="play">
+                <i class='bx bx-play' ></i>
+            </label>
+            <label for="" class="repost">
+                <i class='bx bx-repost' ></i>
+            </label>
+            <label for="" class="user">
+                <i class='bx bx-user-pin'></i>
+            </label>
+        </div>
+        <div class="line"> </div>
+        
+    </div>
+</body>
+</html>

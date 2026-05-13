@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "SN Pro", sans-serif;
+}
+.second{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+}
+.third{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(220, 241, 213);
+}
+.first{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    background-image: url(https://i.pinimg.com/1200x/cf/1d/b8/cf1db89fc8b650f69258258cb3423655.jpg);
+}
+.SearchBar{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.801);
+    position: absolute;
+    top: 0;
+    border-radius: 0 0 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.SearchBar{
+    display: flex;
+    align-items: center;
+    color: rgb(37, 103, 19);
+}
+.name{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 100px;
+}
+.menu{
+    font-weight: 750;
+    margin-left: 370px;
+    color: rgb(23, 63, 12);
+}
+.menu label{
+    margin-left: 30px;
+}
+.search{
+    margin-left: 440px;
+}
+.search a{
+    font-size: larger;
+    color: rgb(16, 44, 8);
+    font-weight: 900;
+    padding: 7px;
+    border: 2px solid rgb(37, 101, 19);
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    margin-right: 10px;
+}
+.search button{
+    background-color: rgb(37, 103, 19);
+    border: none;
+    width: 110px;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.search button:active{
+    background-color: rgba(37, 103, 19, 0.715);
+}
+.text{
+    margin-left: 100px;
+    margin-top: 300px;
+    color: white;
+}
+.pic{
+    background-color: aliceblue;
+    color: rgb(37, 101, 19);
+    font-size: larger;
+    padding: 8px;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.text h1{
+    font-size: 50px;
+    margin-top: 25px;
+    text-shadow: 3px 5px 10px rgb(0, 0, 0);
+}
+.text .te{
+    margin-left: 0;
+    font-size: smaller;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(37, 101, 19);
+}
+.text .h2{
+    margin-top: 0;
+    position: relative;
+    bottom: 20px;
+}
+.text .quate{
+    
+    text-shadow: 3px 5px 5px rgb(0, 0, 0);
+}
+.text button{
+    margin-top: 20px;
+    border: 2px solid white;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(37, 101, 19);
+}
+.text button:hover{
+    background-color: rgba(37, 103, 19, 0.537);
+}
+.search1{
+    width: 80%;
+    height: 130px;
+    border-radius: 80px;
+    background-color: rgb(144, 198, 129);
+    position: absolute;
+    top: 900px;
+    left: 170px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.searchIn{
+    position: relative;
+    width: 80%;
+    height: 45%;
+    background-color: white;
+    border-radius: 70px;
+    top: 35px;
+    left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.searchIn2{
+    position: relative;
+    width: 10%;
+    height: 45%;
+    border-radius: 50px;
+    bottom: 24px;
+    left: 1165px;
+    background-color: rgb(37, 101, 19);
+}
+.searchIn{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.searchIn .ti3{
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgba(37, 103, 19, 0.511);
+    margin-right: 200px;
+}
+.searchIn span{
+    color: rgba(0, 0, 0, 0.422);
+    font-weight: 700;
+}
+.searchIn a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(37, 103, 19);
+    margin-left: 30px;
+    margin-left: 180px;
+}
+.searchIn i{
+    margin-left: 20px;
+}
+.searchIn .ti1{
+    margin-right: 200px;
+}
+.searchIn2 span{
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: 17px;
+    margin-left: 43px;
+}
+.second{
+    
+}
+.left .img1{
+    width: 400px;
+    border: 10px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+.addTop img{
+    border: 7px solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 320px;
+    left: 220px;
+}
+.addBottom img{
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 160px;
+    left: 600px;
+}
+.right{
+    position: relative;
+    bottom: 450px;
+    left: 800px;
+}
+.right h1{
+    font-size: 40px;
+    color: rgb(26, 71, 14);
+    margin-bottom: 15px;
+}
+.right p{
+    color: rgb(26, 71, 14);
+    margin-bottom: 25px;
+}
+.right .b1{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: rgb(37, 101, 19);
+    color: white;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.b1 i{
+    padding-right: 5px;
+    font-size: larger;
+}
+.right .b2{
+    font-size: 16px;
+    border: none;
+    margin-left: 20px;
+    color: rgb(37, 101, 19);
+}
+.third h1{
+    color: rgb(37, 101, 19);
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 150px;
+}
+.box1{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+}
+.box1 h1,p{
+    padding: 20px;
+    padding-top: 0;
+    color: rgb(32, 86, 16);
+}
+.box1 img{
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+
+}
+.box h2{
+    padding: 20px;
+    padding-bottom: 0;
+    padding: 10px;
+    padding-left: 20px;
+    color: rgb(26, 71, 14);
+}
+.box2{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+}
+.box2 img{
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+}
+.box3{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+}
+.box3 img{
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+}
+.box button{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(38, 100, 19);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dot{
+
+}
+.dot span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(37, 101, 19, 0.265);
+    position: relative;
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 550px;
+    right: 800px;
+}   
+.d1{
+    color: rgb(32, 86, 16);
+}

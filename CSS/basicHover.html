@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text{
+            margin-bottom: 30px;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(232, 170, 170);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor:pointer;
+            transition:all 0.3s ease-in-out;
+        }
+        .text a{
+            text-decoration: none;
+        }
+        
+        .text:hover{
+            background-color: rgb(230, 106, 106);
+        
+            width: 200px;
+            height: 100px;
+            
+        }
+        
+        a{
+            transition: all 0.3s ease-in-out;
+        }
+        .text:hover a{
+            color: white;
+
+        }
+        .b1{
+            width: 200px;
+            height: 50px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 20px;
+            transition: all 0.1s ease-in;
+        }
+        .b1:active{
+            background-color: rgb(105, 145, 225);
+        }
+        .visit:visited{
+            color: brown;
+        }
+        .visit{
+            margin-left: 80px;
+        }
+        .link:link{
+            color: cornflowerblue;
+        }
+        .child h2:first-child{
+            background-color: lightcoral;
+        }
+        .child h2:last-child{
+            background-color: lightblue;
+        }
+        .child h2:nth-child(3){
+            background-color: lightgreen;
+        }
+        .check:checked{
+            width: 100px;
+            height: 100px;
+        }
+        .before::before{
+            content: "yes  ";
+        }
+        .before::after{
+            content: "  no";
+        }
+        .line{
+            width: 800px;
+        }
+        .line::first-line{
+            color: red;
+        }
+        p::selection{
+            background-color: lightcoral;
+            color: red;
+        }
+        .placeholder::placeholder{
+            
+        }
+    </style>
+
+    <div class="DIV">
+        <div class="text">
+            <a href="">Hover</a>
+        </div>
+        <button class="b1">Click</button><br>
+        <a href="https://maps.app.goo.gl/JE5oqKZ4NctvkSdk9" class="visit">Hello</a>
+        <!-- visit joch hx jenh por yg dak -->
+        <a href="https://maps.app.goo.gl/TSwky44uSrSYR8Lx5" class="link">Hello</a>
+        <!-- link dak por ot torn joch pel joch hz jenh por tmd vnh -->
+
+        <div class="child">
+            <h2>1</h2>
+            <h2>2</h2>
+            <h2>3</h2>
+            <h2>4</h2>
+            <h2>5</h2>
+        </div><br>
+        <input class="check" type="checkbox">
+        <h3 class="before">hello</h3>
+        <select name="" id="">
+            <option disabled selected value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select><br><br>
+        <div class="line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam cupiditate omnis labore totam reprehenderit tempore unde quo a harum itaque mollitia, et voluptatem non earum maiores suscipit distinctio ea consectetur corporis. Incidunt voluptates aliquid quam corporis accusamus illum molestiae culpa delectus fuga nobis ut ratione explicabo architecto ab obcaecati porro sint, veritatis atque minima similique eveniet? Aliquam perferendis quas natus dicta aliquid nulla veniam ex? Eius, necessitatibus eligendi, voluptatem explicabo quasi distinctio dignissimos incidunt neque error ex quisquam dolorum nam amet minima natus tempore perferendis similique quidem, sunt ratione! Ea odit dolorum qui minima suscipit exercitationem impedit saepe voluptatem.</p>
+        </div>
+        <input class="placeholder" type="text">
+    </div>
+</body>
+</html>

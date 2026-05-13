@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            gap: 5px;
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(5, 25px);
+        }
+        .container div{
+            background-color: rgb(230, 239, 179);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container div:nth-child(1){
+            grid-row: span 2;
+            font-weight: bold;
+        }
+        .container div:nth-child(2){
+            grid-column: span 2;
+            font-weight: bold;
+        }
+        .container div:nth-child(3){
+            grid-row: span 2;
+            font-weight: bold;
+        }
+        .container div:nth-child(4){
+            font-weight: bold;
+        }
+        .container div:nth-child(5){
+            font-weight: bold;
+        }
+        .container div:nth-child(14){
+            grid-column: span 4;
+            display: flex;
+            justify-content: start;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>ថ្ងៃ</div>
+        <div>ម៉ោងរៀន</div>
+        <div>មុខវិជ្ជា</div>
+        <div>ចាប់ផ្ដើម</div>
+        <div>បញ្ចប់</div>
+        <div>ចន្ទ</div>
+        <div>8:00</div>
+        <div>9:30</div>
+        <div>Math</div>
+        <div>អង្គារ</div>
+        <div>9:45</div>
+        <div>11:15</div>
+        <div>English</div>
+        <div>សរុបថ្ងៃរៀន: 2</div>
+        
+    </div>
+</body>
+</html>

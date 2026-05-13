@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "SN Pro", sans-serif;
+        }
+        .container{
+            width: 230px;
+            height: 330px;
+            background-color: rgb(126, 127, 122);
+            border-radius: 30px;
+            border: 3px solid rgb(216, 214, 214);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        img{
+            width: 150px;
+            margin-left: 40px;
+            margin-block-start: 30px;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
+        }
+        h3{
+            color: rgb(207, 205, 205);
+            margin-top: 15px;
+            margin-left: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.68);
+        }
+        .star{
+            margin-left: 20px;
+            
+        }
+        .star i{
+            font-size: 10px;
+            color: rgb(255, 166, 0);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.628);
+        }
+        .price{
+            margin-left: 20px;
+            font-size: 10px;
+            color:rgba(207, 205, 205, 0.699);
+            text-decoration: line-through;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.575);
+        }
+        .price1{
+            font-size: smaller;
+            color: rgb(207, 205, 205);
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.68);
+        }
+        .cart{
+            position: absolute;
+            top: 220px;
+            left: 600px;
+            background-color: rgb(126, 127, 122);
+            font-size: 10px;
+            padding: 12px;
+            color: rgb(230, 227, 227);
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            
+            transform: translateX(0px);
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+        }
+        .cart:hover{
+            background-color: rgba(126, 127, 122, 0.799);
+        }
+        .logo i:hover{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: rgb(108, 109, 105);
+        }
+        i{
+            transition: 0.2s ease-in-out;
+        }
+        .logo{
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 180px;
+            position: relative;
+            bottom: 90px;
+            color: white;
+
+            transform: translateX(50px);
+            opacity: 0;
+            transition: 0.2s ease;
+        }
+        .logo i{
+            border: 1.5px solid rgba(241, 241, 241, 0.425);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.68);
+        }
+        .container:hover .logo{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .container:hover .cart{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="nokia.png" alt="">
+        <h3>Nokia 106</h3>
+        <span class="star">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='i1, bx bx-star' ></i>
+        </span><br>
+        <span class="price">$899.99</span>
+        <span class="price1">$2</span>
+        <div class="hover">
+            <span class="cart"><i class='bx bx-shopping-bag' ></i>add to cart</span>
+            <span class="logo">
+                <i class='bx bx-heart' ></i>
+                <i class='bx bx-shuffle'></i>
+                <i class='bx bx-search' ></i>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

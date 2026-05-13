@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Figtree", sans-serif;
+}
+.DIV{
+    display: flex;
+    width: 1207px;
+    height: 645px;
+    background-color: rgb(190, 30, 30);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.menu{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(90, 117, 161);
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.display{
+    width: 75%;
+    height: 100%;
+}
+.menu a{
+    display: flex;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.accusoft{
+    padding: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: white;
+    padding-bottom: 55px;
+}
+.Accusoft{
+    padding-left: 10px;
+}
+.dash{
+    width: 279px;
+    height: 45px;
+    position: relative;
+    left: 23px;
+    bottom: 10px;
+    border-radius: 30px 0 0 30px;
+    background-color: rgb(228, 230, 233);
+}
+.dash a{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 15px;
+    color: rgb(90, 117, 161);
+}
+.dash i{
+    font-size: larger;
+}
+.dash label{
+    font-weight: 600;
+    padding-left: 15px;
+}
+.icon{
+    margin-top: 15px;
+
+}
+.icon a{
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 15px;
+
+}
+.icon i{
+    font-size: larger;
+}
+.icon label{
+    padding-left: 15px;
+    font-weight: 600;
+}
+.right{
+    width: 75%;
+    height: 100%;
+    background-color: white;
+}
+.taskbar{
+    width: 100%;
+    height: 10%;
+    background-color:rgb(228, 230, 233) ;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    display: flex;
+    align-items: center;
+}
+.list{
+    font-weight: bold;
+    margin-left: 20px;
+}
+.list i{
+    font-size: larger;
+}
+.list label{
+    font-size: larger;
+    margin-left: 10px;
+}
+.search{
+    width: 150px;
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.276);
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+.search i{
+    margin-right: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.623);
+}
+.search label{
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.568);
+}
+.profile{
+    margin-left: 240px;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.profile label{
+    margin-left: 13px;
+}
+.profile .nickname{
+    font-size: smaller;
+    color: rgba(255, 255, 255, 0.71);
+    margin-left: 10px;
+}
+.profile .name{
+    font-weight: bold;
+}
+.number{
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    display: flex;
+}
+.number div{
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.customer{
+    background-color: rgb(228, 230, 233) ;
+    width: 195px;
+    padding: 25px;
+}
+.customer .num{
+    font-size: 25px;
+    font-weight: bold;
+}
+.customer .text{
+    color: rgba(0, 0, 0, 0.559);
+    font-size: smaller;
+}
+.customer i{
+    font-size: 25px;
+    margin-left: 70px;
+    color: rgb(90, 117, 161);
+}
+.project{
+    background-color: rgb(228, 230, 233) ;
+    width: 195px;
+    padding: 25px;
+}
+.project .num{
+    font-size: 25px;
+    font-weight: bold;
+}
+.project .text{
+    color: rgba(0, 0, 0, 0.559);
+    font-size: smaller;
+}
+.project i{
+    font-size: 25px;
+    margin-left: 80px;
+    color: rgb(90, 117, 161);
+}
+.order{
+    background-color: rgb(228, 230, 233) ;
+    width: 195px;
+    padding: 25px;
+}
+.order .num{
+    font-size: 25px;
+    font-weight: bold;
+}
+.order .text{
+    color: rgba(0, 0, 0, 0.559);
+    font-size: smaller;
+}
+.order i{
+    font-size: 25px;
+    margin-left: 70px;
+    color: rgb(90, 117, 161);
+}
+.income{
+    background-color: rgb(90, 117, 161) ;
+    width: 195px;
+    padding: 25px; 
+}
+.income .num{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.income .text{
+    color: rgba(0, 0, 0, 0.559);
+    font-size: smaller;
+    color: white;
+}
+.income i{
+    font-size: 25px;
+    margin-left: 70px;
+    color: white;
+}
+.allProject{
+    background-color: rgb(228, 230, 233);
+    width: 500px;
+    height: 350px;
+    margin: 25px;
+    border-radius: 10px 0 0 10px;
+    float: left;
+}
+
+.first{
+    padding: 10px;
+    display: flex;
+    height: 50px;
+}
+.first .name{
+    padding-right: 245px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.first .icon{
+    position: relative;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(90, 117, 161);
+    font-size: smaller;
+    color: white;   
+    cursor: pointer;
+}
+.first .name{
+    margin-right: 5px;
+}
+.icon i{
+    font-size: smaller;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+table{
+    padding-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    height: 20px;
+}
+.header{
+    border: 1px solid rgba(0, 0, 0, 0.162);
+    width: 100%;
+    height: 40px;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+table tr{
+    height: 20px;
+}
+table td{
+    padding-left: 10px;
+}
+td{
+    padding: 4px 10px;
+}
+.dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.blue{background-color: rgb(113, 113, 237);}
+.red{background-color: rgb(234, 58, 58);}
+.orange{background-color: orangered;}
+.allCustomer{
+    background-color: rgb(228, 230, 233);
+    width: 330px;
+    height: 350px;
+    margin-left: 550px;
+    margin-top: 25px;
+    border-radius: 0 10px 10px 0;
+}
+.head{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    display: flex;
+    height: 50px;
+    
+}
+.head .textt{
+    padding-right:60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.head .iconn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(90, 117, 161);
+    font-size: smaller;
+    color: white;
+    cursor: pointer;
+}
+.a1{
+    display: flex;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+.one img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.one label{
+    margin-left: 15px;
+}
+.one .namee{
+    font-weight: bold;
+}
+.one .nameee{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.495);
+}
+.two{
+    color: rgb(90, 117, 161);
+    margin-left: 50px;
+    font-size: larger;
+    position: relative;
+    top: 10px;
+}
+.two i{
+    margin-left: 10px;
+}

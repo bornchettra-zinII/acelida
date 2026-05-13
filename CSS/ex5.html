@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+        body{
+            background-color: antiquewhite;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .DIV{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 850px;
+            height: 550px;
+            background-image: url("https://i.pinimg.com/736x/af/2e/ba/af2eba6a58f8dc9f41d39726a6afad53.jpg");
+            background-size: cover;
+        }
+        .DIV .form{
+            float: right;
+            width: 43%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.324);
+        }
+        .name{
+            margin-top: 50px;
+            justify-content: center;
+            font-size: 15px;
+            display: flex;
+            color: rgb(74, 56, 18);
+        }
+        .n1{
+            position: relative;
+            float: left;
+            font-size: 47px;
+            font-weight: bold;
+        }
+        .n1 span{
+            color: rgb(194, 97, 7);
+        }
+        .name1{
+            font-weight: 700;
+            margin-top: 5px;
+        }
+        .n2{
+            font-size: 25px;
+        }
+        .n2 span{
+            color: rgb(194, 97, 7);
+        }
+        .n3{
+            font-size: 10px;
+        }
+        .text{
+            margin-top: 40px;
+            margin-left: 55px;
+            color: rgb(74, 56, 18);
+        }
+        .input{
+            margin-top: 15px;
+        }
+        .username{
+            margin-left: 55px;
+            font-weight: 700;
+            color: rgb(74, 56, 18);
+            font-size: smaller;
+        }
+        .in{
+            width: 260px;
+            height: 35px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid rgb(165, 88, 17);
+            margin-left: 50px;
+            display: flex;
+            background-color: rgba(163, 82, 6, 0.411);
+        }
+        ::placeholder{
+            color: rgba(255, 255, 255, 0.591);
+        }
+        .button{
+            margin-top: 15px ;
+            width: 260px;
+            height: 40px;
+            border-radius: 20px;
+            margin-left: 50px;
+            background-color: rgb(74, 56, 18);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover{
+            background-color: rgb(137, 94, 31);
+        }
+        .signin{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(74, 44, 18);
+            font-weight: bolder;
+            font-size: smaller;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        .icon .facebook{
+            margin-right: 15px;
+            color: rgb(74, 44, 18);
+        }
+        .icon .google{
+            margin-right: 15px;
+            color: rgb(74, 44, 18);
+        }
+        .icon .microsoft{
+            color: rgb(74, 44, 18);
+        }
+        .Text{
+            margin-top: 320px;
+            margin-left: 80px;
+        }
+        .h1{
+            color: rgba(255, 255, 255, 0.749);
+        }
+        .d{
+            margin-top: 30px;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 120px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.381);
+            color: rgba(255, 255, 255, 0.749);
+            border-radius: 20px;
+        }
+        .d .p1{
+            font-weight: bolder;
+            font-size: smaller;
+            display: flex;
+            justify-content: center;
+        }
+        .d .p2{
+            font-weight: bolder;
+            display: flex;
+            font-size: large;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .p2 i{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="DIV">
+        <div class="form">
+            <div class="name">
+                <label for="" class="n1">S<span>H</span></label>
+                <div class="name1">
+                    <label for="" class="n2">SOLUTION <span>HAI</span></label>
+                    <p class="n3">DIGITAL SOLUTION OF EVERY PROBLEM</p>
+                </div>
+            </div>
+            <div class="text">
+                <h2 class="h">sign up</h2>
+            </div>
+            <div class="input">
+                <label for="" class="username">Full Name</label><br>
+                <input type="text" class="in" placeholder="Enter your name">
+                <br>
+                <label for="" class="username">E-mall</label><br>
+                <input type="email" class="in" placeholder="E-mail Address">
+                <br>
+                <label for="" class="username">Password</label><br>
+                <input type="password" class="in" placeholder="password">
+                <br>
+                <button class="button">Create Account</button>
+                <p class="signin"><u>or sign up with</u></p>
+            </div>
+            <div class="icon">
+                <a href="#" class="facebook">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="#" class="google">
+                    <i class='bx bxl-google' ></i>
+                </a>
+                <a href="#" class="microsoft">
+                    <i class='bx bxl-microsoft' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="Text">
+            <h1 class="h1">It's time to boost your creativity</h1>
+            <div class="d">
+                <p class="p1">Here you are</p>
+                <p class="p2">sign in  <i class='bx bxs-hand-right' ></i></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

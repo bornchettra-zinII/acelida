@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            color: rgb(243, 216, 216);
+            flex-direction: column;
+        }
+        .container{
+            width: 500px;
+            height: 250px;
+            border: 2px solid rgb(255, 0, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: smaller;
+            margin-bottom: 30px;
+        }
+        .first{
+            width: 95%;
+            height: 13%;
+            background-color: rgb(240, 86, 86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .second{
+            width: 95%;
+            height: 13%;
+            background-color: rgb(241, 114, 114);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .third{
+            width: 95%;
+            height: 50%;
+            background-color: white;
+            display: flex;
+            gap: 5px;
+        }
+        .fourth{
+            width: 95%;
+            height: 13%;
+            background-color: rgb(241, 163, 163);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left{
+            width: 28%;
+            height: 100%;
+            background-color: rgb(243, 74, 74);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right{
+            width: 72%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .r1{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(236, 186, 186);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .r2{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(243, 155, 155);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container1{
+            width: 500px;
+            height: 100px;
+            border: 2px solid rgb(32, 3, 3);
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+        .in{
+            width: 95%;
+            height: 50%;
+            background-color: brown;
+            display: flex;
+            border-radius: 10px;
+        }
+        .in .le{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .in .ri{
+            width: 70%;
+            height: 100%;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .ri button{
+            font-size: 10px;
+        }
+        .ri a{
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: brown;
+            color: rgb(244, 231, 231);
+            padding-right: 5px;
+            gap: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+        .ri a:hover{
+            background-color: rgb(239, 135, 135);
+            color: rgb(255, 255, 255);
+        }
+        .us{
+            width: 70px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .home{
+            width: 60px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .skill{
+            width: 50px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .project{
+            width: 50px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .ri button{
+            width: 50px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: rgb(247, 127, 127);
+            color: rgb(244, 231, 231);
+            font-weight: 600;
+            cursor: no-drop;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">Header</div>
+        <div class="second">Navigate</div>
+        <div class="third">
+            <div class="left">Aside</div>
+            <div class="right">
+                <div class="r1">Content</div>
+                <div class="r2">Section</div>
+            </div>
+        </div>
+        <div class="fourth">Footer</div>
+    </div>
+    <div class="container1">
+        <div class="in">
+            <div class="le"><h4>Visual Studio</h4></div>
+            <div class="ri">
+                <a href="#" class="home">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="us">
+                    <i class='bx bxs-id-card' ></i>
+                    <span>About Us</span>
+                </a>
+                <a href="#" class="skill">
+                    <i class='bx bxs-user-voice'></i>
+                    <span>Skill</span>
+                </a>
+                <a href="#" class="project">
+                    <i class='bx bxs-notepad' ></i>
+                    <span>Project</span>
+                </a>
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

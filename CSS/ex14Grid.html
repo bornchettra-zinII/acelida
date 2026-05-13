@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4,60px);
+            grid-template-rows: repeat(3, 30px);
+            border: 2px solid rgba(38, 37, 37, 0.582);
+            padding: 5px;
+        }
+        .container div{
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container div:nth-child(2){
+            grid-column: span 2;
+        }
+        .container div:nth-child(5){
+            grid-column: span 2;
+        }
+        .container div:nth-child(7){
+            grid-column: span 4;
+            display: flex;
+            justify-content: start;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>No</div>
+        <div>Name</div>
+        <div>Score</div>
+        <div>1</div>
+        <div>Chettra Born</div>
+        <div>100</div>
+        <div>Total Student: 1</div>
+    </div>
+</body>
+</html>

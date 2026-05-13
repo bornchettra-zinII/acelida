@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.card{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(241, 60, 60);
+
+}
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(214, 0, 0);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+}
+.card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(62, 22, 2);
+}
+.text .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+.card .logo{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.logo .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgb(65, 94, 239);
+    width: 34px;
+    height: 34px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+.card .Buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.Buttons .button{
+    font-weight: 400;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    font-size: 14px;
+    padding: 8px 24px;
+    background: rgb(241, 60, 60);
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.Buttons .button:hover{
+    background-color: rgb(241, 109, 109);
+}
+.card .analay{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analay .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right: none;
+}

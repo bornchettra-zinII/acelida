@@ -1,0 +1,32 @@
+   @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Dangrek&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+*{
+    background-color: beige;
+   
+}
+
+h1{
+    text-align: center;
+    font-family: "Bitcount Grid Double Ink", system-ui;
+}
+.div{
+   text-align: center;
+}
+.div1{
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightcoral;
+    margin: 0 auto;
+    width: 190px;
+}
+.div1 > h3{
+    background-color: lightcoral;
+}
+.div2 {
+    color: black;
+    text-shadow: 1px 3px 1px #68CEC8;;
+    text-align: center;
+}
+.div3 a{
+    text-align: center;
+    text-decoration: none;  
+}

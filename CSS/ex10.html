@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Figtree", sans-serif;
+            background: rgb(99, 189, 241);
+        }
+        .DIV{
+            
+            width: 330px;
+            height: 670px;
+            background: white;
+            border-radius: 30px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+        .Image{
+            position: relative;
+            width: 100%;
+            height: 45%;
+            border-radius: 30px;
+            background-color: rgb(67, 109, 214);
+            box-shadow: inset 5px 10px 60px rgba(0, 0, 0, 0.482);
+        }
+        .in img{
+            width: 90%;
+            height: 100%;
+            margin: 49px 0 0 13px;
+            filter: drop-shadow(5px 0px 55px  rgb(255, 255, 255));
+        }
+        .top{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.765);
+            margin-top: 10px;
+        }
+        .top a{
+            text-decoration: none;
+            display: flex;
+            color: rgba(255, 255, 255, 0.776);
+            gap: 3px;
+        }
+        .top .box{
+            width: 80px;
+            height: 25px;
+            border-radius: 30px;
+            background-color: rgba(240, 248, 255, 0.306);
+            margin: 0 50px 0 60px;
+        }
+        .top .time{
+            font-size: 13px;
+        }
+        .heart{
+            position: absolute;
+        }
+        .heart a{
+            text-decoration: none;
+        }
+        .heart a{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(240, 248, 255, 0.132);
+            color: white;
+            margin: 15px;
+            margin-top: 50px;
+        }
+        .heart .click{
+            float: left;
+            margin-right: 220px;
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            backdrop-filter: blur(6px);
+            background: rgba(0, 0, 0, 0.171);
+            border-radius: 0 0 29px 29px;
+            mask-image: linear-gradient(to top, rgb(255, 255, 255) 70%, transparent);
+        }
+        .message i{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(67, 109, 214);
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
+        .message a{
+            float: left;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .leter{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .leter .name{
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.84);
+        }
+        .leter .nickname{
+            font-size: smaller;
+            color: rgba(255, 255, 255, 0.575);
+            position: relative;
+            top: 7px;
+        }
+        .leter i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.167);
+            color: rgb(255, 208, 0);
+            box-sizing: border-box;
+            gap: 5px;
+            float: right;
+            margin-top: 3px;
+        }
+        .leter span{
+            color: rgba(255, 255, 255, 0.852);
+            margin-bottom: 3px;
+            margin-right: 2px;
+        }
+        .message{
+            margin-left: 45px;
+            margin-top: 20px;
+        }
+        .back{
+            position: absolute;
+            width: 330px;
+            height: 370px;
+            border-radius: 30px;
+            background-color: rgb(227, 227, 245);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        }
+        .outer{
+            position: relative;
+            top: 315px;
+            margin-left: 20px;
+            float: left;
+            font-size: smaller;
+            display: flex;
+            gap: 30px;
+            color: rgb(9, 21, 131);
+        }
+        .time i{
+            position: relative;
+            top: 12px;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        .time label{
+            font-size: smaller;
+        }
+        .time .ex{
+            margin-left: 31px;
+        }
+        .Date{
+            margin-top: 80px;
+        }
+        .select{
+            font-size: small;
+            color: rgba(24, 60, 108, 0.705);
+            margin-left: 15px;
+        }
+        .nameMonth{
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        .nameMonth label{
+            margin-left: 14px;
+            color: rgb(44, 74, 150);
+        }
+        .edit{
+            padding: 4px;
+            border-radius: 30px;
+            background-color: rgb(227, 227, 245);
+        }
+        .date{
+            display: flex;
+            justify-content: center;
+            margin-top: 13px;
+            gap: 10px;
+            flex-direction: row;
+            align-items: center;
+        }
+        .dd{
+            color: white;
+            border-radius: 10px;
+            border: 2px solid rgb(44, 74, 150);
+            padding: 2px;
+        }
+        .ddd{
+            width: 40px;
+            height: 50px; 
+            background-color:rgb(63, 103, 206) ;
+            border-radius: 8px;
+            position: relative;
+            right: 0.1px;
+        }
+        .dd .d{
+            margin-left: 16px;
+            font-size: 14px;
+            color: white;
+        }
+        .dd span{
+            font-size: 10px;
+            margin-left: 10px;
+            position: relative;
+            top: 4px;
+            color: rgba(240, 248, 255, 0.626);
+        }
+        .dd .dot{
+            position: absolute;
+            top: 535px;
+            left: 852px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color:rgb(63, 103, 206);
+        }
+        .cc{
+            width: 35px;
+            height: 50px;
+            background-color: rgb(227, 227, 245);
+            border-radius: 10px;
+        }
+        .cc span{
+            font-size: 10px;
+            margin:15px 0 0 8px;
+            position: relative;
+            top: 3px;
+        }
+        .cc .c{
+            font-size: 13px;
+            margin-left: 13px;
+            margin-top: 10px;
+            position: relative;
+            top: 3px;
+        }
+        .bb{
+            width: 30px;
+            height: 45px;
+            background-color: rgba(227, 227, 245, 0.815);
+            border-radius: 10px;
+        }
+        .bb span{
+            font-size: 8px;
+            position: relative;
+            top: 1px;
+            left:10px;
+            bottom: 5px;
+        }
+        .bb .b{
+            font-size: 12px;
+            margin-left: 2px;
+            margin-top: 10px;
+            position: relative;
+            top: 3px;
+        }
+        .aa{
+            width: 25px;
+            height: 40px;
+            background-color: rgba(227, 227, 245, 0.642);
+            border-radius: 10px;
+        }
+        .aa span{
+            font-size: 6px;
+            position: relative;
+            top: 0;
+            left:7px;
+            bottom: 5px;
+        }
+        .aa .a{
+            font-size: 11px;
+            margin-left: 2px;
+            margin-top: 10px;
+            position: relative;
+            top: 3px;
+        }
+        .Time{
+            margin-top: 20px;
+        }
+        .select1{
+            font-size: small;
+            color: rgba(24, 60, 108, 0.705);
+            margin-left: 15px;
+        }
+        .timing{
+            margin-top: 20px;
+            font-size: 11px;
+            
+        }
+        .timing label{
+            margin-left: 13px;
+            color: rgb(44, 74, 150);
+            
+        }
+        .edit1{
+            padding: 9px;
+            border-radius: 30px;
+            background-color: rgb(227, 227, 245);
+        }
+        .button{
+            width: 90%;
+            height: 50px;
+            background-color: rgb(63, 103, 206);
+            margin-left: 15px;
+            margin-top: 25px;
+            border-radius: 30px;
+        }
+        .button button{
+            padding: 10px;
+            border: none;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 60px;
+            top: 8px;
+            color: white;
+        }
+
+        .leave{
+            position: relative;
+            top: 17px;
+            left: 99px;
+            width: 40%;
+            border-radius: 30px;
+            height: 5px;
+            background-color: rgb(23, 49, 109);
+        }
+    </style>        
+</head>
+<body>
+    <div class="DIV">
+        <div class="back">
+            <div class="outer">
+                <div class="time">
+                    <i class='bx bx-time-five' ></i>
+                    <label for="" class="year">8 years</label><br>
+                    <label for="" class="ex">Experience</label>
+                </div>
+                <div class="time">
+                    <i class='bx bx-group'></i>
+                    <label for="" class="year">2.7K+</label><br>
+                    <label for="" class="ex">Patients</label>
+                </div>
+                <div class="time">
+                    <i class='bx bx-star'></i>
+                    <label for="" class="year">4.8</label><br>
+                    <label for="" class="ex">Reviews</label>
+                </div>
+            </div>
+        </div>
+        <div class="Image">
+            <div class="top">
+                <label for="" class="time">2:50</label>
+                <label for="" class="box"></label>
+                <a href="#" class="internet">
+                    <i class='bx bx-signal-5' ></i> 
+                    <i class='bx bx-wifi' ></i>
+                    <i class="fa-solid fa-battery-three-quarters"></i>
+                </a>
+            </div>
+            <div class="heart">
+                <a href="#" class="click">
+                    <i class='bx bx-chevron-left' ></i>
+                </a>
+                <a href="#" class="heartt">
+                    <i class='bx bx-heart' ></i>
+                </a>
+            </div>
+            <div class="in">
+                <img src="doctor.png" alt="">
+            </div>
+            <div class="bottom">
+                <div class="leter">
+                    <label for="" class="name">Will Robinson</label><br>
+                    <label for="" class="nickname">Neurologist </label>
+                    <i class='bx bxs-star'><span>4.8</span></i>
+                </div>
+                <div class="message">
+                    <a href="#" class="comment"><i class='bx bx-message-rounded-dots'></i></a>
+                    <a href="#" class="call"><i class='bx bx-phone' ></i></a>
+                    <a href="#" class="record"><i class='bx bx-video' ></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Date">
+            <label for="" class="select">Select Date</label>
+            <div class="nameMonth">
+                <label for="">October</label>
+                <label for="" class="edit">November</label>
+                <label for="" class="">December</label>
+                <label for="">January</label>
+                <label for="">February</label>
+            </div>
+            <div class="date">
+                <div class="aa">
+                    <span class="num a">2</span><br>
+                    <span>Sun</span>
+                </div>
+                <div class="bb">
+                    <span class="num b">3</span><br>
+                    <span class="mon">Mon</span>
+                </div>
+                <div class="cc">
+                    <span class="num c">4</span><br>
+                    <span>Tue</span>
+                </div>
+                <div class="dd">
+                    <div class="ddd">
+                        <span class=" d">5</span><br>
+                        <span>Wed</span>
+                    </div>
+                    <label for="" class="dot"></label>
+                </div>
+                <div class="cc">
+                    <span class="num c">6</span><br>
+                    <span>Thu</span>
+                </div>
+                <div class="bb">
+                    <span class="num b">7</span><br>
+                    <span>Fri</span>
+                </div>
+                <div class="aa">
+                    <span class="num a">8</span><br>
+                    <span>Sat</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="Time">
+            <label for="" class="select1">Select Time</label>
+            <div class="timing">
+                <div class="clock">
+                    <label for="" class="edit1"><i class='bx bx-time'></i><span> 10:30 AM</span></label>
+                    <label for=""><i class='bx bx-time'></i><span> 11:00 AM</span></label>
+                    <label for=""><i class='bx bx-time'></i><span> 12:00 PM</span></label>
+                    <label for=""><i class='bx bx-time'></i><span> 1:00 PM</span></label>
+                </div>
+                <div class="button">
+                    <button>Book Appointment - $15/hr</button>
+                </div>
+            </div>
+        </div>
+        <div class="leave"></div>
+    </div>
+</body>
+</html>

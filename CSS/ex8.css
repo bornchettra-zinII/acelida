@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Figtree", sans-serif;
+    background-color: rgb(235, 210, 194);
+    
+}
+.DIV{
+    display: flex;
+    max-width: 1350px;
+    max-height: 680px;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+}
+.menu{
+    padding: 30px;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(22, 20, 31);
+}
+.menu .icon{
+    display: flex;
+    flex-direction: column;
+}
+.icon a{
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+
+}
+.icon label{
+    margin-left: 15px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-top: 5px; 
+}
+.home{
+    font-weight: 900;
+    color: white;
+}
+.notification{
+    position: relative;
+    right: 10px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(22, 20, 31);
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left: 28px;
+}
+.instagram{
+    display: flex;
+    margin-bottom: 70px;
+}
+.profilem{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.more{
+    position: relative;
+    top: 80px;
+}
+.meta{
+    position: relative;
+    top: 80px;
+}
+.posts{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(22, 20, 31);
+}
+.acc{
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+
+}
+.acc i{
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.587);
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    
+
+}
+.Profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.username{
+    color: white;
+    margin-bottom: 15px;
+}
+.accname{
+    font-weight: bolder;
+}
+.username i{
+    color: rgb(104, 104, 223);
+    position: relative;
+    top: 1px;
+    font-size: small;
+    margin: 0;
+}
+.username .dott{
+    position: relative;
+    bottom: 3px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.582)
+}
+.username .date{
+    color: rgba(240, 248, 255, 0.584);
+}
+.posting img{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+.posting i{
+    font-size: 30px;
+    position: relative;
+    bottom: 45px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.42);
+}
+.icons{
+    position: relative;
+    bottom: 30px;
+    left: 7px;
+    display: flex;
+}
+.icons a{
+    color: rgba(255, 255, 255, 0.822);
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.icons label{
+    padding-left: 5px;
+    align-items: center;
+    font-size: 15px;
+}
+.favorite{
+    position: relative;
+    left: 175px;
+}
+.caption{
+    color: white;
+    position: relative;
+    bottom: 25px;
+    left: 7px;
+}
+.caption .name{
+    font-weight: bolder;
+}
+.caption i{
+    position: relative;
+    top: 2px;
+    color: rgb(104, 104, 223);
+}
+.caption .text{
+    color: rgba(255, 255, 255, 0.822);
+    font-size: small;
+}
+.friends{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(22, 20, 31);
+    padding: 25px;
+}
+.account{
+    padding-left: 80px;
+    padding-top: 20px;
+
+}
+.ownacc{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+}
+.nameacc{
+    padding-left: 7px;
+}
+.nameacc1{
+    color: rgba(255, 255, 255, 0.47);
+    padding-left: 11px;
+    font-size: small;
+}
+.switch{
+    color: rgb(163, 163, 248);
+    font-size: small;
+    font-weight: 500;
+    position: relative;
+    left: 167px;
+    bottom: 10px;
+}
+.suggested{
+    color: rgba(255, 255, 255, 0.822) ;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+.seeall{
+    position: relative;
+    left: 157px;
+    font-size: small;
+}
+.suggestedfriends{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+}
+.suggestedfriends .f1{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+    margin-left:80px;
+    margin-top: 20px;
+}
+.f{
+    color:rgba(255, 255, 255, 0.822) ;
+}
+.n1{
+    font-weight: 700;
+    display: flex;
+    margin-top: 20px;
+    padding-left: 11px;
+
+}
+.f2{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(22, 20, 31);
+    margin-top: 5px;
+
+}
+.f3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(22, 20, 31);
+    position: relative;
+    right: 14px;
+}
+.f4{
+    font-size: small;
+    position: relative;
+    bottom: 20px;
+    color: rgb(158, 158, 241);
+}
+.f5{
+    color: rgba(255, 255, 255, 0.47);
+    position: relative;
+    right: 15px;
+    bottom: 5px;
+    font-size: small;
+}
+.undertext{
+    color: rgba(255, 255, 255, 0.47) ;
+    font-size: small;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.t1{
+    font-size: smaller;
+}
+.box{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(39, 38, 38, 0.623);
+    border-radius: 30px ;
+    border: 1px solid rgb(47, 46, 46);
+    cursor: pointer;
+    display: flex;
+    align-items: center ;
+    position: relative;
+    left: 345px;
+    top: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.box a{
+    color: rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    position: relative;
+}
+.box i{
+    font-size: 25px;
+}
+.m{
+    font-weight: 600;
+    padding-left: 10px;
+}
+.m1{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    left: 39px;
+}
