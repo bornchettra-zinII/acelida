@@ -5,29 +5,31 @@
     box-sizing: border-box;
 }
 body{
-    width: 1422px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     background-color: #1B2232;
     font-family: "Fredoka", sans-serif;
 }
-.container{
-    width: 100%;
-    height: 100%;
-}
 .top-bar{
-    height: 115px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    min-height: 110px;
     width: 100%;
     background-color: #1B3351;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .top-bar .image1{
     width: 220px;
-    margin-right: 320px;
+}
+.image1{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
 }
 .top-bar label{
     color: rgb(228, 224, 224);
@@ -57,9 +59,18 @@ label i{
 .dropText2{
     position: relative;
 }
+.dropText2 #i2{
+    display: none;
+}
 .dropText2:hover .text2List{
-    height: 220px;
+    height: 200px;
     border: 0.1px solid rgba(255, 255, 255, 0.504);
+}
+.dropText2:hover #i2{
+    display: flex;
+}
+.dropText2:hover #i1{
+    display: none;
 }
 .text2List a:hover{
     color: orange;
@@ -75,7 +86,7 @@ label i{
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    right: 10px;
+    right: 1px;
     border-radius: 10px;
 }
 .text2List hr{
@@ -118,6 +129,15 @@ label i{
 .dropText4{
     position: relative;
 }
+.dropText4 #i2{
+    display: none;
+}
+.dropText4:hover #i2{
+    display: flex;
+}
+.dropText4:hover #i1{
+    display: none;
+}
 .text4List{
     width: 180px;
     height: 0;
@@ -128,12 +148,18 @@ label i{
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    right: 10px;
+    right: 1px;
     border-radius: 10px;
 }
 .dropText4:hover .text4List{
-    height: 80px;
+    height: 70px;
     border: 0.1px solid rgba(255, 255, 255, 0.504);
+}
+.dropText4:hover .text4{
+    width: 135px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #1B2232;
 }
 .text4List a{
     text-decoration: none;
@@ -151,14 +177,407 @@ label i{
     border-radius: 10px;
     background-color: #1B2232;
 }
+.text4List a:hover{
+    color: orange;
+    text-decoration: underline;
+}
 .image2{
-    margin-left: 20px;
+    margin-left: 10px;
     width: 25px;
     border: 1px solid rgba(255, 255, 255, 0.853);
 }
-@media (max-width:1000px){ 
-    .top-bar img{
-        width: 30px;
+.labell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    padding-right: 20px;
+}
+.ins{
+    color: rgba(255, 255, 255, 0.685);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: start;
+    margin-left: 15px;
+    display: none;
+}
+.image3{
+    margin-left: 20px;
+    width: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.853);
+    display: none;
+}
+@media(max-width: 760px){
+    .top-bar{
+        min-height: 80px;
     }
-} 
-
+    .top-bar .image1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+    }
+    .labell{
+        display: none;
+    }
+    .ins{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .image3{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-right: 20px;
+        width: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.853);
+    }
+}
+.nav-bar{
+    width: 100%;
+    min-height: 62px;
+    border-bottom: 0.5px solid rgba(129, 126, 126, 0.33);
+    color: white;
+    background-color: #1B2232;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 110px;
+    z-index: 10000;
+}
+.nav-bar label{
+    font-size: 11px;
+}
+.nav-bar .left{
+    font-weight: 500;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.nav-bar .left a{
+    color: rgb(245, 227, 227);
+    font-size: 12px;
+}
+.nav-bar .left label{
+    cursor: pointer;
+}
+.nav-bar .right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.right .r2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.right .r2 img{
+    width: 20px;
+}
+.right .r3 i{
+    color: red;
+}
+.right .r4 i{
+    color: darkgreen;
+}
+.t1Drop{
+    position: relative;
+    z-index: 10;
+}
+.t1{
+    transition: all 0.3s ease-in-out;
+}
+.t1Drop:hover .t1{
+    color: #BC9838;
+}
+.t1DropList{
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #1B2232;
+    transition: all 0.4s ease;
+    border: 0.1px solid transparent;
+    z-index: 1000;
+}
+.t1Drop:hover .t1DropList{
+    height: 230px;
+    margin-top: 10px;
+    border: 0.1px solid rgba(255, 255, 255, 0.504);
+}
+.t1DropList a{
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 12px;
+}
+.t1DropList a:hover{
+    color: #BC9838;
+    text-decoration: underline;
+}
+.t1Drop #i2{
+    display: none;
+}
+.t1Drop:hover #i2{
+    display: inline-block;
+}
+.t1Drop:hover #i1{
+    display: none;
+}
+.t2Drop{
+    position: relative; 
+    z-index: 10;
+}
+.t2{
+    transition: all 0.3s ease-in-out;
+}
+.t2Drop:hover .t2{
+    color: #BC9838;
+}
+.t2DropList{
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #1B2232;
+    transition: all 0.4s ease;
+    border: 0.1px solid transparent;
+    z-index: 1000;
+}
+.t2Drop:hover .t2DropList{
+    margin-top: 10px;
+    height: 230px;
+    border: 0.1px solid rgba(255, 255, 255, 0.504);
+}
+.t2DropList a{
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 12px;
+}
+.t2DropList a:hover{
+    color: #BC9838;
+    text-decoration: underline;
+}
+.t2Drop #i2{
+    display: none;
+}
+.t2Drop:hover #i2{
+    display: inline-block;
+}
+.t2Drop:hover #i1{
+    display: none;
+}
+.t3Drop{
+    position: relative; 
+    z-index: 10;
+}
+.t3{
+    transition: all 0.3s ease-in-out;
+}
+.t3Drop:hover .t3{
+    color: #BC9838;
+}
+.t3DropList{
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #1B2232;
+    transition: all 0.4s ease;
+    border: 0.1px solid transparent;
+    z-index: 1000;
+}
+.t3Drop:hover .t3DropList{
+    margin-top: 10px;
+    height: 230px;
+    border: 0.1px solid rgba(255, 255, 255, 0.504);
+}
+.t3DropList a{
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 12px;
+}
+.t3DropList a:hover{
+    color: #BC9838;
+    text-decoration: underline;
+}
+.t3Drop #i2{
+    display: none;
+}
+.t3Drop:hover #i2{
+    display: inline-block;
+}
+.t3Drop:hover #i1{
+    display: none;
+}
+.t4Drop{
+    position: relative; 
+    z-index: 10;
+}
+.t4{
+    transition: all 0.3s ease-in-out;
+}
+.t4Drop:hover .t4{
+    color: #BC9838;
+}
+.t4DropList{
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #1B2232;
+    transition: all 0.4s ease;
+    border: 0.1px solid transparent;
+    z-index: 1000;
+}
+.t4Drop:hover .t4DropList{
+    height: 420px;
+    border: 0.1px solid rgba(255, 255, 255, 0.504);
+    margin-top: 10px;
+}
+.t4DropList a{
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 12px;
+}
+.t4DropList a:hover{
+    color: #BC9838;
+    text-decoration: underline;
+}
+.t4Drop #i2{    
+    display: none;
+}
+.t4Drop:hover #i2{
+    display: inline-block;
+}
+.t4Drop:hover #i1{
+    display: none;
+}
+@media(max-width: 760px){
+    .nav-bar .left{
+        display: none;
+    }
+    .nav-bar .right{
+        margin-right: auto;
+    }
+    .nav-bar{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+}
+.BigAdv{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.BigAdv img{
+    width: 69%;
+}
+.BigAdv i{
+    padding: 30px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.493);
+    transition: all 0.1s ease-in-out;
+}
+.BigAdv i:hover{
+    color: white;
+}
+.BigAdv .dot{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 20px;
+    left: 600px;
+}
+.BigAdv .dot label{
+    width: 11px;
+    height: 11px;
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 50%;
+}
+.BigAdv .dot label:first-child{
+    background-color: black;
+}
+.head2{
+    width: 100%;
+    height: 230px;
+    font-size: 11px;
+    font-weight:500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.head2 .h1{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.head2 .h1:hover{
+    text-decoration: underline;
+}
+.head2 .h1 .img1{
+    width: 30px;
+}
+.head2 .h1 .img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.348);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.head2 .h1 .img:hover{
+    border: 1px solid white;
+}
+.head2 .h1C span{
+    margin-left: 28px;
+}
+.head2 .h1C{
+    margin-top: 15px;
+}
+.section1{
+    width: 100%;
+    height: 460px;
+    background-color: antiquewhite;
+}
